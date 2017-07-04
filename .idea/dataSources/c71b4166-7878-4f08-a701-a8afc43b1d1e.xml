@@ -19,7 +19,7 @@
     <table id="13" parent="2" name="Author2"/>
     <table id="14" parent="2" name="Author3"/>
     <table id="15" parent="2" name="Author4"/>
-    <table id="16" parent="2" name="Author5"/>
+    <table id="16" parent="2" name="Author6"/>
     <table id="17" parent="2" name="DebitAccount"/>
     <table id="18" parent="2" name="Vehicle"/>
     <table id="19" parent="2" name="Vehicle_emp"/>
@@ -131,7 +131,7 @@
       <ColNames>firstName</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="45" parent="16" name="firstName">
+    <column id="45" parent="16" name="First">
       <Position>1</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
@@ -139,15 +139,14 @@
     <column id="46" parent="16" name="age">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="16" name="lastName">
+    <column id="47" parent="16" name="Last">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
     <key id="48" parent="16" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>firstName</ColNames>
+      <ColNames>First</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="49" parent="17" name="id">
