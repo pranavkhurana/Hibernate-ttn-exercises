@@ -10,7 +10,7 @@ public class Application2 {
 
         Author2 author=new Author2("pranav","khurana",21);
 
-        SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();
+        SessionFactory sessionFactory=new Configuration().configure("hibernate2.cfg.xml").buildSessionFactory();
         Session session=sessionFactory.openSession();
 
         //Data is persisted in database only after a tx is commited
