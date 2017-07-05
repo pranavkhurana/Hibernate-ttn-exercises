@@ -8,6 +8,7 @@ import org.hibernate.cfg.Configuration;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+//Question 4 and 8
 public class Application4 {
     public static void main(String[] args) {
 
