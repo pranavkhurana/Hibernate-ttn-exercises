@@ -1,9 +1,6 @@
 package entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Author10 {
@@ -13,12 +10,35 @@ public class Author10 {
     String firstName;
     String lastName;
     int age;
+    @Embedded
+    Address address;
 
-    public Author10(String firstName, String lastName, int age) {
+    public Author10(String firstName, String lastName, int age, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.address = address;
     }
+
+    public Author10() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     public String getFirstName() {
         return firstName;
     }
