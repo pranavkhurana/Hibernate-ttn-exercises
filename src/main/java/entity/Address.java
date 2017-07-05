@@ -1,6 +1,6 @@
 package entity;
-//Q 10
-//this need not be marked as Entity because it is embedde in Author
+//Addresss class added in Q10
+//this need not be marked as Entity because it is embedded in Author
 public class Address {
     int streetNumber;
     String location;
