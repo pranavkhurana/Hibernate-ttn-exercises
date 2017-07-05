@@ -15,106 +15,55 @@
     <schema id="9" parent="1" name="testdb"/>
     <schema id="10" parent="1" name="ttn"/>
     <table id="11" parent="2" name="Author10"/>
-    <table id="12" parent="2" name="Author9"/>
-    <table id="13" parent="2" name="Author9b"/>
-    <table id="14" parent="2" name="hibernate_sequences"/>
-    <column id="15" parent="11" name="id">
+    <table id="12" parent="2" name="Subjects"/>
+    <column id="13" parent="11" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="16" parent="11" name="location">
+    <column id="14" parent="11" name="location">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="17" parent="11" name="state">
+    <column id="15" parent="11" name="state">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="18" parent="11" name="streetNumber">
+    <column id="16" parent="11" name="streetNumber">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="19" parent="11" name="age">
+    <column id="17" parent="11" name="age">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="20" parent="11" name="firstName">
+    <column id="18" parent="11" name="firstName">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="21" parent="11" name="lastName">
+    <column id="19" parent="11" name="lastName">
       <Position>7</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="22" parent="11" name="PRIMARY">
+    <key id="20" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="23" parent="12" name="id">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-    </column>
-    <column id="24" parent="12" name="age">
-      <Position>2</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="25" parent="12" name="firstName">
-      <Position>3</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <column id="26" parent="12" name="lastName">
-      <Position>4</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <key id="27" parent="12" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="28" parent="13" name="id">
+    <column id="21" parent="12" name="Author_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="29" parent="13" name="age">
+    <column id="22" parent="12" name="subject">
       <Position>2</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="30" parent="13" name="firstName">
-      <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="31" parent="13" name="lastName">
-      <Position>4</Position>
-      <DataType>varchar(255)|0</DataType>
-    </column>
-    <key id="32" parent="13" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="33" parent="14" name="sequence_name">
-      <Position>1</Position>
-      <DataType>varchar(255)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="34" parent="14" name="next_val">
-      <Position>2</Position>
-      <DataType>bigint(20)|0</DataType>
-    </column>
-    <key id="35" parent="14" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>sequence_name</ColNames>
-      <Primary>1</Primary>
-    </key>
+    <index id="23" parent="12" name="FKqh1h79jko8utn2g4gmpslki0r">
+      <ColNames>Author_id</ColNames>
+    </index>
   </database-model>
 </dataSource>

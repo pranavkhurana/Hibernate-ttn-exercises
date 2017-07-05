@@ -1,5 +1,5 @@
 package entity;
-//Addresss class added in Q10
+//This class added for Q10
 //this need not be marked as Entity because it is embedded in Author
 public class Address {
     int streetNumber;
@@ -14,7 +14,6 @@ public class Address {
         this.location = location;
         this.state = state;
     }
-
     public int getStreetNumber() {
         return streetNumber;
     }
