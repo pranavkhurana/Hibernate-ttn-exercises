@@ -1,9 +1,15 @@
 package entity;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
+
 //This class added for Question 14
 @Entity
 public class Book {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    int bookId;
+
     String bookName;
 
     public Book() {
@@ -11,6 +17,14 @@ public class Book {
 
     public Book(String bookName) {
         this.bookName = bookName;
+    }
+
+    public int getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(int bookId) {
+        this.bookId = bookId;
     }
 
     public String getBookName() {
