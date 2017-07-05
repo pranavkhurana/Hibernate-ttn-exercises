@@ -2,7 +2,7 @@ package entity;
 
 import javax.persistence.*;
 
-//This class added for Question 14
+//added @Question 14
 @Entity
 public class Book {
 
