@@ -27,6 +27,7 @@
         <mapping class="entity.Author16c"/>
 
         <mapping class="entity.Book"/>
+        <mapping class="entity.Book16b"/>
 
     </session-factory>
 </hibernate-configuration>
