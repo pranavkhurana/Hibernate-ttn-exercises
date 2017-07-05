@@ -28,6 +28,7 @@
 
         <mapping class="entity.Book"/>
         <mapping class="entity.Book16b"/>
+        <mapping class="entity.Book16c"/>
 
     </session-factory>
 </hibernate-configuration>

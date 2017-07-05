@@ -12,15 +12,13 @@ public class Author16c {
     String lastName;
     int age;
 
-    //unidirectional
-    @OneToMany
-    @JoinTable(joinColumns = @JoinColumn(name="author_id")
-            ,inverseJoinColumns = @JoinColumn(name = "book_id"))
-    List<Book> bookList;
+    //bidirectional
+    @OneToMany(mappedBy = "author",cascade = CascadeType.PERSIST)
+    List<Book16c> bookList;
     public Author16c() {
     }
 
-    public Author16c(String firstName, String lastName, int age, List<Book> bookList) {
+    public Author16c(String firstName, String lastName, int age, List<Book16c> bookList) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -59,11 +57,11 @@ public class Author16c {
         this.age = age;
     }
 
-    public List<Book> getBookList() {
+    public List<Book16c> getBookList() {
         return bookList;
     }
 
-    public void setBookList(List<Book> bookList) {
+    public void setBookList(List<Book16c> bookList) {
         this.bookList = bookList;
     }
 }
