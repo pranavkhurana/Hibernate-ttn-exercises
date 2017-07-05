@@ -1,5 +1,6 @@
 package entity;
-
+//Q 10
+//this need not be marked as Entity because it is embedde in Author
 public class Address {
     int streetNumber;
     String location;
